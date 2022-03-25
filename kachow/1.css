@@ -1,0 +1,51 @@
+html{
+    background-color: rgb(20,20,20);
+}
+.figure{
+    background-color: skyblue;
+    border: solid 10px white;
+    height: 200px;
+    width: 200px;
+    margin:50%;
+    margin-top: 500px;
+    transform: translate(-50%, -50%);
+    animation: moves 2s ease-in-out infinite;
+}
+
+@keyframes moves{
+0%{
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    
+    margin-top: 600px;
+}
+10%{
+    height: 300px;
+    width: 100px;
+    border-radius: 50%;
+
+    margin-top: 400px;
+}
+30%{
+    height: 200px;
+    width: 200px;
+    border-radius: 50px;
+    
+    margin-top: 200px;
+}
+90%{
+    height: 300px;
+    width: 100px;
+    border-radius: 50%;
+
+    margin-top: 400px;
+}
+100%{
+    height: 50px;
+    width: 300px;
+    border-radius: 50px;
+    
+    margin-top: 600px;
+}
+}
