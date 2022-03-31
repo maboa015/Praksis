@@ -1,0 +1,6 @@
+Dette er min første prototype jeg helst vil bruke
+
+problemet med denne kommer til å være å finne ut av hvordan simpelt tall i databasen som 4 skal displaye 4 lysene bokser
+ideen min er at javascript sjekker hvilket tall som er i databasen og på forskjellig antall tall så bytter den ut forskjellig antall av klasser som aktiverer bokser
+problemet er at jeg ikke vet JS og jeg vet ikke om JS kan se ting i databasen som gjør dette mye vanskeligere som kan få meg til å bytte til å bare vise tall istedenfor
+i en annen prototype.
