@@ -1,0 +1,120 @@
+body{
+    background-image: url(svg/bg2.svg) ;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+    height: 100%;
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.stat_row_mobile{
+    background-color: rgb(93, 11, 160);
+    margin: 10px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+}
+.user_code_mobile{
+    display: none;
+}
+/* user boksen */
+i.material-icons{
+    filter: invert(1);
+    font-size: 100px;
+}
+.user_name{
+    color: rgb(255, 31, 136);
+    font-size: 25px;
+    line-height: 100px;
+    font-weight: bolder;
+}
+.user_code a{
+    text-decoration: none;
+    color: rgb(255, 31, 136);
+    border: solid 2px rgb(255, 31, 136);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 2em 0 rgb(255, 31, 136);
+    font-size: 20px;
+    line-height: 100px;
+}
+/* stats boksen */
+.stat_container{
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+    background-color: rgb(80, 7, 138);
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: 50%;
+    margin-top: 400px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 2em 0 rgb(80, 7, 138);
+}
+.stat_logo{
+   width: 100px;
+   height: 100px; 
+   margin-right: 30px;
+   filter: invert(1);
+}
+.stat_row{
+background-color: rgb(93, 11, 160);
+margin: 10px;
+height: 100px;
+padding: 10px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+border-radius: 20px;
+}
+.stat_point{
+    height: 100px;
+    width: 10%;
+    background-color: rgb(92, 5, 39);
+    border-radius: 25px;
+}
+.active{
+    background-color: rgb(255, 0, 98);
+    box-shadow: 0 0 2em 0 rgb(255, 31, 136);
+}
+ 
+/* mobil */
+@media only screen and (max-width: 800px) {
+.user_code{
+       display: none;
+   }
+.user_name{
+    color: rgb(255, 31, 136);
+    font-size: 25px;
+    line-height: 100px;
+    font-weight: bolder;
+}
+.stat_row_mobile{
+    background-color: rgb(93, 11, 160);
+    margin: 10px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.user_code_mobile{
+    display: block;
+}
+.user_code_mobile a{
+    text-decoration: none;
+    color: rgb(255, 31, 136);
+    border: solid 2px rgb(255, 31, 136);
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 0 2em 0 rgb(255, 31, 136);
+    font-size: 20px;
+    line-height: 100px;
+}
+ 
+}
