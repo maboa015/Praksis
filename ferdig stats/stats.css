@@ -1,0 +1,149 @@
+body{
+    background-image: url(svg/bg2.svg); /* bakgrunn */
+    background-size: cover;
+    height: 100%;
+    font-family: 'Press Start 2P', cursive; /* et par ting jeg spesifiserer her for å ikke gjøre det i hver eneste element */
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+.stat_row_mobile{
+    background-color: rgb(93, 11, 160);
+    margin: 10px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+}
+.user_code_mobile{
+    display: none;
+}
+/* user boksen */
+i.material-icons{
+    font-size: 100px;
+    color: rgb(255, 31, 136);
+}
+.user_name{
+    color: rgb(255, 31, 136);
+    font-size: 25px;
+    line-height: 100px;
+    font-weight: bolder;
+}
+.user_code a{
+    text-decoration: none;
+    color: rgb(255, 31, 136);
+    border: solid 2px rgb(255, 31, 136);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: inset 0 0 1em 0 rgb(255, 31, 136), 0 0 2em 0 rgb(255, 31, 136);
+    font-size: 20px;
+    line-height: 100px;
+}
+/* stats boksen */
+.stat_container{
+    width: 80%;
+    height: auto;
+    max-width: 900px;
+    background-color: rgb(80, 7, 138);
+    border-radius: 20px;
+    padding: 50px;
+    margin-left: 50%;
+    margin-top: 400px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 0 0 2em 0 rgb(80, 7, 138);
+}
+.stat_logo{
+   width: 100px;
+   height: 100px;
+   line-height: 100px; 
+   filter: invert(1);
+   text-align: center;
+}
+.stat_row{
+    background-color: rgb(93, 11, 160);
+    margin: 10px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.big_stat_row{
+    background-color: rgb(93, 11, 160);
+    margin: 10px;
+    padding: 10px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.stat_point{
+    height: 120px;
+    max-height: 120px;
+    width: 15%;
+    max-width: 70px;
+    border-radius: 25px;
+    text-align: center;
+    border: solid 2px rgb(255, 31, 136);
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: inset 0 0 2em 0 rgb(255, 31, 136), 0 0 1em 0 rgb(255, 31, 136);
+    margin-top: 10px;
+}
+.stat_point h3{
+    line-height: 15px;
+    color: white;
+}
+ 
+/* mobil */
+@media only screen and (max-width: 850px) {
+.stat_container{
+    padding: 20px;
+    width: 90%;
+}
+.user_code{
+    display: none; 
+   }
+.user_name{
+    color: rgb(255, 31, 136);
+    font-size: 25px;
+    line-height: 100px;
+    font-weight: bolder;
+}
+.stat_row_mobile{
+    background-color: rgb(93, 11, 160);
+    margin: 10px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.user_code_mobile{
+    display: block;
+}
+.user_code_mobile a{
+    text-decoration: none;
+    color: rgb(255, 31, 136);
+    border: solid 2px rgb(255, 31, 136);
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: inset 0 0 1em 0 rgb(255, 31, 136), 0 0 2em 0 rgb(255, 31, 136);
+    font-size: 20px;
+    line-height: 100px;
+}
+.stat_point{
+    margin-top: 20px;
+}
+.stat_logo{
+    transform: scale(0.8);
+}
+}
