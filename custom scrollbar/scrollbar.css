@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(33, 5, 56);
+    height: 5000px;
+}
+::-webkit-scrollbar{ /* scrollbar */
+    width: 15px;
+}
+::-webkit-scrollbar-track{ /* hele linjen til scrollbar */
+    background-color: rgb(46, 5, 70);
+}
+::-webkit-scrollbar-thumb{ /* lille delen som viser hvor i siden du er */
+    background-color: rgb(255, 31, 136);
+    border-radius: 50px;
+    opacity: 0.5;
+}
+@media only screen and (max-width: 850px){ /* man trenger ikke scrollbar på mobil */
+    ::-webkit-scrollbar{ 
+        width: 0;
+    }
+}
